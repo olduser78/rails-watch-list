@@ -1,20 +1,17 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+<div class="container-top">
+<%= link_to "New List", new_list_path, class: "btn-flat" %>
+</div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://png.pngtree.com/background/20210709/original/pngtree-the-background-of-the-movie-poster-picture-image_869718.jpg);">
   <div class="container">
     <h1>Save any kind of movies</h1>
   </div>
 </div>
-
-
-
-
-
-
-    <h3 class="mb-0">My Lists</h3>
-    <%= link_to "Create a movie list", new_list_path, class: "btn btn-flat" %>
-
-
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
     <% @lists.each do |list| %>
       <%= link_to list_path(list), class: "text-decoration-none" do %>
       <%= list.name %>
-      <%end%>
     <%end%>
+    <%end%>
+  </div>
+</div>
