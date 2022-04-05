@@ -10,10 +10,12 @@
 @import "components/index";
 @import "pages/index";
 
-.item-1{
-  align-items: left;
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.item-2{
-  align-items: right;
+.item {
+  font-size: 30px;
 }
